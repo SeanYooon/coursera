@@ -1,0 +1,8 @@
+version: 2
+sources:
+  - name: raw
+    database: ANALYTICS_DB
+    schema: RAW
+    tables:
+      - name: heart_raw
+        description: "Raw heart disease dataset from CSV upload"

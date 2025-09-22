@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: stg_heart
+    description: "Cleaned heart disease data from raw source"
+    columns:
+      - name: age
+        description: "Patient age"
+        tests:
+          - not_null
+
+      - name: heart_disease_flag
+        description: "Target variable: 1 = heart disease, 0 = no heart disease"
+        tests:
+          - not_null
+          - accepted_values:
+              values: [0, 1]
+
+      - name: cholesterol
+        description: "Serum cholesterol in mg/dl"
+        tests:
+          - not_null

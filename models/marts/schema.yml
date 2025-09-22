@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: heart_summary
+    description: "Aggregated heart disease metrics by age"
+    tests:
+      - not_empty
+
+    columns:
+      - name: age
+        description: "Patient age"
+      - name: avg_chol
+        description: "Average cholesterol level"
+      - name: positive_cases
+        description: "Count of positive heart disease cases"
